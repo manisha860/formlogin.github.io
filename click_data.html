@@ -1,0 +1,58 @@
+<HTML>
+<head>
+<style>
+body{
+			font-family:Arial, sans-serif;
+				margin:60px;
+				padding:20px;
+				background-color:#FFECEC;
+			}
+			.selBox{
+				width: 300px ;
+				height: 30px ;
+			}
+			.form-group input[type="Reset"]{
+				display:black;
+				width:20%;
+				padding:10px;
+				font-size:16px;
+				border-radius:5px;
+				background-color:#526D82;
+				color:#fff;
+				border:none;
+			}
+			.form-group input[type="submit"]{
+				display:black;
+				width:20%;
+				padding:10px;
+				padding:14px;
+				border-radius:5px;
+				background-color:#526D82;
+				color:#fff;
+				border:none;
+			}
+			
+</style>
+</head>			
+<BODY bgcolor="#F1D4E5">
+<FORM METHOD="GET"
+ACTION="http://localhost:8080/click_data.jsp">
+<div class="container">
+<br><br><br>
+<center><h2>Select Username To See Result &nbsp;&nbsp;&nbsp;&nbsp;
+<select	 name="Username" class="ui-select selBox">
+	<OPTION>----Select----</OPTION>
+	<OPTION >A</OPTION>
+	<OPTION >B</OPTION>
+	<OPTION >C</OPTION>
+	<OPTION >D</OPTION>
+
+</select><br><br>
+<div class="form-group ">
+<INPUT TYPE=RESET VALUE="Reset">
+<INPUT TYPE=SUBMIT VALUE="Result">
+
+</div>
+</FORM>
+</BODY>
+</HTML>

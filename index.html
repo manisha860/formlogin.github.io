@@ -1,0 +1,108 @@
+<!DOCKTYPE html>
+<html>
+	<head>
+		<title>Login Form</title>
+		<style>
+			body{
+				font-family:Arial, sans-serif;
+				margin:0;
+				padding:20px;
+				background-color:#FFECEC;
+			}
+			.container{
+				max-width:400px;
+				margin:0 auto;
+				border:1px solid #ccc;
+				padding:20px;
+				background-color:#DAFFFB;
+			}
+			.container h2{
+				text-align:center;
+			}
+			.form-group{
+				margin-bottom:20px;
+			}
+			.form-group label{
+				display:block;
+				font-weight:bold;
+				margin-bottom:5px;
+			}
+			.form-group input[type="text"],
+			.form-group input[type="password"]{
+				width:100%;
+				padding:10px;
+				font-size:16px;
+				border-radius:5px;
+				border:1px solid #ccc;
+			}
+			.form-group input[type="Reset"]{
+				display:black;
+				width:49%;
+				padding:10px;
+				font-size:16px;
+				border-radius:5px;
+				background-color:#394867;
+				color:#fff;
+				border:none;
+			}
+			.form-group input[type="submit"]{
+				display:black;
+				width:49%;
+				padding:10px;
+				border-radius:5px;
+				background-color:#394867;
+				color:#fff;
+				border:none;
+			}
+			.btn input[type="button"]{
+				display:black;
+				width:100%;
+				padding:10px;
+				font-size:16px;
+				border-radius:5px;
+				background-color:#394867;
+				color:#fff;
+				border:none;
+			}
+			.form-group button:hover {
+				background-color: #213363;
+				cursor: pointer;
+			}
+			.btn button:hover {
+				background-color: #213363;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h2>Login Form</h2><br><br>
+				<FORM METHOD="GET" ACTION="http://localhost:8080/logine.jsp">
+					<div class="form-group">
+						<label for="username">Username <span style="color: red;">*</span>:</label>
+						<input type="text" id="Username" name="Username" required>
+					</div><br>
+					<div class="form-group">
+						<label for="Password">Password: <span style="color: red;">*</span>:</label>
+						<input type="password" name="Password" required>
+					</div><br>
+					<div class="form-group">
+						<input type="reset" value="Reset">	
+						<input type="submit" value="Login" >
+					</div></A><br>
+					<div class="btn"><A HREF="http://localhost:8080/create_account.html">
+						<input type="button" value="Create Account" ></A><br>
+						
+					</div><br>
+					<div class="btn"><A HREF="http://localhost:8080/admine_up.html">
+						<input type="button" value="Admine Login" ></A><br>
+						
+					</div>
+					
+				</form>
+			</h2>
+		</div>
+		
+	</body>
+
+		

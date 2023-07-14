@@ -1,0 +1,91 @@
+<!DOCKTYPE html>
+<html>
+	<head>
+		<title>Login Form</title>
+		<style>
+			body{
+				font-family:Arial, sans-serif;
+				margin:0;
+				padding:20px;
+				background-color:#FFECEC;
+			}
+			.container{
+				max-width:400px;
+				margin:0 auto;
+				border:1px solid #ccc;
+				padding:20px;
+				background-color:#DAFFFB;
+			}
+			.container h2{
+				text-align:center;
+			}
+			.form-group{
+				margin-bottom:20px;
+			}
+			.form-group label{
+				display:block;
+				font-weight:bold;
+				margin-bottom:5px;
+			}
+			.form-group input[type="text"],
+			.form-group input[type="password"]{
+				width:100%;
+				padding:10px;
+				font-size:16px;
+				border-radius:5px;
+				border:1px solid #ccc;
+			}
+			.form-group input[type="Reset"]{
+				display:black;
+				width:49%;
+				padding:10px;
+				font-size:16px;
+				border-radius:5px;
+				background-color:#213363;
+				color:#fff;
+				border:none;
+			}
+			.form-group input[type="submit"]{
+				display:black;
+				width:49%;
+				padding:10px;
+				border-radius:5px;
+				background-color:#213363;
+				color:#fff;
+				border:none;
+			}
+			
+			.form-group button:hover {
+				background-color: #45a049;
+				cursor: pointer;
+			}
+			.btn button:hover {
+				background-color: #45a049;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h2>Login Form</h2><br><br>
+				<form action="http://localhost:8080/admine_account.html" method="GET">
+					<div class="form-group">
+						<label for="username" >Username <span style="color: red;">*</span>:</label>
+						<input type="text" id="Username" name="Username" required >
+					</div><br>
+					<div class="form-group">
+						<label for="Password">Password: <span style="color: red;">*</span>:</label>
+						<input type="password" name="Password" required>
+					</div><br>
+					<div class="form-group">
+						<input type="reset" value="Reset">
+						<input type="submit" value="Login">
+					</div><br>
+					
+				</form>
+			</h2>
+		</div>
+		
+	</body>
+
+		

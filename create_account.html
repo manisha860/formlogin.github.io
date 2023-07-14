@@ -1,0 +1,85 @@
+<!DOCKTYPE html>
+<html>
+	<head>
+		<title>New Registration</title>
+		<style>
+		body{
+			font-family:Arial, sans-serif;
+			margin:0;
+			padding:20px;
+			background-color:#FFECEC;
+		}
+		.container{
+			max-width:400px;
+			margin:0 auto;
+			border:none;
+			padding:80px;
+			border:1px solid #ccc;
+			background-color:#DAFFFB;
+		}
+		.form-group{
+			margin-bottom:20px;
+		}
+		.form-group label{
+			display:inline-block;
+			font-weight:bold;
+			margin-bottom:5px
+		}
+		.form-group input[type="text"],
+		.form-group input[type="password"]{
+			width:60%;
+			padding:10px;
+			font-size:16px;
+			border-radius:5px;
+			border:1px solid #ccc;
+		}
+		.form-group input[type="Submit"],
+		.form-group input[type="reset"]{
+			display:black;
+			width:49%;
+			padding:10px;
+			font-size:16px;
+			border-radius:5px;
+			background-color:#213363;
+			color:#fff;
+			border:none;
+		}
+
+		</style>
+	</head>
+	<body>
+		<center>
+		<div class="container">
+			<h1><center>Create Account<center></h1>
+				<form action="http://localhost:8080/create_account.jsp" method="GET">
+					<div class="form-group">
+						<label for="Name"><b><h4>Name <span style="color: red;">*</span>:</h4></b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="text" id="Name" name="Name" required>
+					</div>
+					<div class="form-group">
+						<label for="Cls"><h4>Cls <span style="color: red;">*</span>:</h4></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="text" name="Cls" required>
+					</div>
+					<hr>
+					<div class="form-group">
+						<label for="Username"><b><h4>Create Username <span style="color: red;">*</span>:</h4></b></label>
+						<input type="text" id="Name" name="Username" required>
+					</div>
+					<div class="form-group">
+						<label for="Password"><b><h4>Create Password <span style="color: red;">*</span>:</h4></b></label>
+						<input type="password" name="Create_Password" required>
+					</div>
+					<div class="form-group">
+						<label for="Password"><b><h4>Confirm Password<span style="color: red;">*</span>:</h4></b></label>
+						<input type="password" name="Password" required><br><br>
+						<input type="reset" value="Reset">
+						<input type="submit" value="Register">
+						
+					</div>
+					
+				</form>
+			</center>
+		</div>
+	</body>
+
+		
